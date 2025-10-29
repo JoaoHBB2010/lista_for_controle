@@ -7,11 +7,20 @@
     */
 
     //ENTRADA
+    notasAluno = Number(prompt("Quantas notas o aluno teve?"));
+    let notas = 0;
+    let quantidade = 0;
+    let media = 0;
     
-
     //PROCESSAMENTO
-    
+    for(let contagem = 1;contagem <= notasAluno;contagem++){
+        notas += Number(prompt(`Qual a ${contagem}ª nota dele?`));
+        quantidade++;
+    }
+
+    media = notas / quantidade
 
     //SAÍDA
+    alert(`A média do aluno foi ${media}`);
 
 </script>
