@@ -6,11 +6,30 @@
     */
 
     //ENTRADA
+    const numeroInicial = Number(prompt(`Informe um numero inicial`));
+    const numeroFinal = Number(prompt(`Informe um numero Final`));
 
     
     //PROCESSAMENTO
+    let par = [];
+    let impar = [];
+
+    if(numeroInicial < numeroFinal){
+        for(let numero = numeroInicial + 1;numero < numeroFinal; numero++){
+            if(numero % 2 == 0){
+                par.push(numero);
+            }
+            else{
+                impar.push(numero);
+            }
+        }
+    }
+    else{
+        alert("ERRO!");
+    }
 
     
     //SAÍDA
+    document.write(`Os numeros Pares entre ${numeroInicial} e ${numeroFinal} são:${par} <br> Os numeros Impares entre ${numeroInicial} e ${numeroFinal} são: ${impar} `)
 
 </script>
