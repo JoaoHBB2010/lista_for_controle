@@ -7,17 +7,17 @@
     */
 
     //ENTRADA
-    const n1 = Number(prompt("Informe 5 numeros (1/5)"));
-    const n2 = Number(prompt("Informe 5 numeros (2/5)"));
-    const n3 = Number(prompt("Informe 5 numeros (3/5)"));
-    const n4 = Number(prompt("Informe 5 numeros (4/5)"));
-    const n5 = Number(prompt("Informe 5 numeros (5/5)"));
-
+    let maiorN =0;
     //PROCESSAMENTO
     for(let contagem = 1;contagem <= 5;contagem++){
-        
+        let numero = Number(prompt(`Insira um numero (${contagem}/5)`))
+
+        if(maiorN < numero){
+            maiorN = numero;
+        }
     }
     
     //SAÍDA
+    alert(`O Maior numero é ${maiorN}`);
 
 </script>
