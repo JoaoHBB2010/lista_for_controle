@@ -6,12 +6,12 @@
     */
 
   //ENTRADA
-  const numero = Number(prompt("Informe um número"));
+  const numero = Number(prompt("Informe um número Positivo"));
 
   //PROCESSAMENTO
   let n = 0;
 
-  for (let primo = 1; primo <= 10; primo++) { //Arrumar questao dps
+  for (let primo = 1; primo <= numero; primo++) {
     if (numero % primo == 0 ) {
       n++
     }
@@ -19,7 +19,7 @@
     if(n >= 3){
         alert("Não é um numero Primo!")
     }
-    else if(n == 2){
+    else {
         alert(`${numero} é um numero Primo!`);
     }
 
