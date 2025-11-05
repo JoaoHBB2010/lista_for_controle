@@ -1,4 +1,4 @@
-<meta charset="UTF-8" />
+<meta charset="UTF-8">
 <script>
   /*
     PROBLEMA: SOMA E MÉDIA
@@ -9,17 +9,14 @@
 
   //PROCESSAMENTO
   let numeros = [];
-  let quantidade = 0;
-  let media = 0;
-
+  let soma = 0;
 
   //TERMINAR QUESTAO
-  
   for (let contagem = 1; contagem <= 5; contagem++) {
-    numeros.push(Number(prompt(`Qual o ${contagem}º/5 numero?`)));
-    quantidade++;
+    soma += Number(prompt(`Qual o ${contagem}º/5 numero?`));
   }
-
+  media = n / 5;
+  
   //SAÍDA
-  alert(`A média é ${media}.`)
+  alert(`A média é ${media}. E a soma de todos os numeros é ${soma}`);
 </script>
