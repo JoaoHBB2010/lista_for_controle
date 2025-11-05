@@ -10,13 +10,15 @@
 
     //PROCESSAMENTO
     let contagem = 0;
+    let dias = 0;
 
     for(let investimento = 1000;investimento <= 2000;investimento = investimento * 1.02){
         contagem++
     }
+    dias = (contagem / 5) * 7;
 
 
     //SAÍDA
-    alert(`Irá demorar ${contagem} dias paraconseguir 2000R$`)
+    alert(`Irá demorar ${Math.round(dias)} dias utéis paraconseguir 2000R$`)
 
 </script>
