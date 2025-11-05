@@ -6,11 +6,17 @@
     */
 
     //ENTRADA
-
-    
+    let populacao = 50000;
+    let populacao2 = 50000;
     //PROCESSAMENTO
-    
+    for(let i = 1;i <= 5; i++){
+        populacao += populacao * 0.015;
+    }
+    for(let i = 1;i <= 10;i++){
+        populacao2 += populacao * 0.015;
+    }
 
     //SAÍDA
+    document.write(`A população prevista para 5 anos é ${populacao.toFixed(0)} <br> E para 10 anos é ${populacao2.toFixed(0)}`);
 
 </script>
