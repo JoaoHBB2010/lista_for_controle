@@ -17,7 +17,7 @@
     //PROCESSAMENTO
     let letrasUnicas = [];
     let letrasRepetidas = [];
-    for (let i = 0; i < listaDeLetras.length; i = i + 1) {
+    for (let i = 0; i < listaDeLetras.length; i = i++) {
         let letra = listaDeLetras[i].toLowerCase();
         if (letrasUnicas.includes(letra) == false) {
             letrasUnicas.push(letra);
